@@ -9,19 +9,6 @@ import gym
 import gym_minigrid.wrappers as wrappers
 
 
-#agent_location = torch.flatten(env_output['frame'], 2, 3)
-#agent_location = agent_location[:,:,:,0]
-#agent_location = (agent_location == 10).nonzero() #select object id
-#agent_location = agent_location[:,2]
-#agent_location = agent_location.view(agent_output["action"].shape)
-
-
-#return (self.cart.position[0], self.cart.linearVelocity[0])
-
-
-
-
-
 
 def MinigridWrapper(env_name):
     #env = create_env(env_name)
@@ -38,6 +25,7 @@ class Minigrid2Image(gym.ObservationWrapper):
     # FIXME: we need to support complex observation spaces
     def __init__(self, env):
         gym.ObservationWrapper.__init__(self, env)
+        self.env = env
         self.observation_space = env.observation_space.spaces["image"]
 
         ##ANDRES
@@ -45,12 +33,32 @@ class Minigrid2Image(gym.ObservationWrapper):
         self.num_actions = self.action_space.n
         self.dim_actions = 1
 
+        self.current_observation = []
+
 
     def observation(self, observation):
         return observation["image"]
 
-    def get_current_observation(self, observation):
-        return observation["image"]
+    def get_current_obs(self):
+        return self.current_observation
+
+    def get_state(self):
+        #agent_location = torch.flatten(env_output['frame'], 2, 3)
+        #agent_location = agent_location[:,:,0]
+        #agent_location = (agent_location == 10).nonzero() #select object id
+        #agent_location = agent_location[:,2]
+        #agent_location = agent_location.view(agent_output["action"].shape)
+        return None
+
+    def step(self, action):
+        frame, reward, done, _ = self.env.step(action)
+        self.current_observation = frame
+        return frame, reward, done
+
+    def reset(self):
+        frame = self.env.reset()
+        self.current_observation = frame
+        return frame
 
     def get_stat(self):
         stat = self.stat if hasattr(self, 'stat') else dict()
