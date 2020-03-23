@@ -11,7 +11,7 @@ import gym_minigrid.wrappers as wrappers
 
 
 def MinigridWrapper(env_name):
-    env = Minirid2Image(gym.make(env_name))
+    env = Minigrid2Image(gym.make(env_name))
     env = wrappers.FullyObsWrapper(env)
     return env
 
