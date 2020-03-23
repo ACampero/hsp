@@ -40,7 +40,7 @@ class Minigrid2Image(gym.ObservationWrapper):
         return observation["image"]
 
     def get_current_obs(self):
-        return torch.tensor(self.current_observation["image"])
+        return self.current_observation
 
     def get_state(self):
         #agent_location = torch.flatten(env_output['frame'], 2, 3)
@@ -52,13 +52,13 @@ class Minigrid2Image(gym.ObservationWrapper):
 
     def step(self, action):
         frame, reward, done, _ = self.env.step(action)
-        self.current_observation = frame
-        return frame, reward, done
+        self.current_observation = frame["image"]
+        return torch.tensor(frame), reward, done
 
     def reset(self):
         frame = self.env.reset()
-        self.current_observation = frame
-        return frame
+        self.current_observation = frame["image"]
+        return torch.tensor(frame)  
 
     def get_stat(self):
         stat = self.stat if hasattr(self, 'stat') else dict()
