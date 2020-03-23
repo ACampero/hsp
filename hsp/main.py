@@ -53,6 +53,9 @@ parser.add_argument('--freeze', default=False, action='store_true',
 parser.add_argument('--reward_scale', type=float, default=1.0,
                     help='scale reward before backprop')
 # environment related
+
+parser.add_argument('--env_scenario', default="MiniGrid-KeyCorridorS3R3-v0",
+                    help='name of the environment to run')
 parser.add_argument('--env_name', default="Cartpole",
                     help='name of the environment to run')
 parser.add_argument('--max_steps', default=20, type=int,

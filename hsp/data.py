@@ -35,6 +35,8 @@ def init(env_name, args):
     elif env_name == 'sp_pick':
         from mazebase_env import sp_pick
         env = MazeBaseWrapper('sp_pick', sp_pick, sp_pick)
+    elif "MiniGrid" in env_name:
+        env = MinigridWrapper(env_name)    
     else:
         raise RuntimeError("wrong env name")
 

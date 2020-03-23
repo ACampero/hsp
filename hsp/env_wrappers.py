@@ -4,6 +4,30 @@ import torch
 from mazebase.torch_featurizers import GridFeaturizer
 from utils import merge_stat
 
+import gym
+import gym_minigrid.wrappers as wrappers
+
+
+
+
+def MinigridWrapper(env_name):
+    env = Minirid2Image(gym.make(env_name))
+    env = wrappers.FullyObsWrapper(env)
+    return env
+
+class Minigrid2Image(gym.ObservationWrapper):
+    # FIXME: we need to support complex observation spaces
+    def __init__(self, env):
+        gym.ObservationWrapper.__init__(self, env)
+        self.observation_space = env.observation_space.spaces["image"]
+
+    def observation(self, observation):
+        return observation["image"]
+
+
+
+
+
 class EnvWrapper(object):
     def __init__(self, env):
         self.env = env
