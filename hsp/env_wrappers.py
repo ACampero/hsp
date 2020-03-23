@@ -9,6 +9,18 @@ import gym
 import gym_minigrid.wrappers as wrappers
 
 
+#agent_location = torch.flatten(env_output['frame'], 2, 3)
+#agent_location = agent_location[:,:,:,0]
+#agent_location = (agent_location == 10).nonzero() #select object id
+#agent_location = agent_location[:,2]
+#agent_location = agent_location.view(agent_output["action"].shape)
+
+
+#return (self.cart.position[0], self.cart.linearVelocity[0])
+
+
+
+
 
 
 def MinigridWrapper(env_name):
@@ -28,8 +40,63 @@ class Minigrid2Image(gym.ObservationWrapper):
         gym.ObservationWrapper.__init__(self, env)
         self.observation_space = env.observation_space.spaces["image"]
 
+        ##ANDRES
+        self.observation_dim = self.env.width + self.env.height + 3
+        self.num_actions = self.action_space.n
+        self.dim_actions = 1
+
+
     def observation(self, observation):
         return observation["image"]
+
+    def get_current_observation(self, observation):
+        return observation["image"]
+
+    def get_stat(self):
+        stat = self.stat if hasattr(self, 'stat') else dict()
+        if hasattr(self.env, 'get_stat'):
+            merge_stat(self.env.get_stat(), stat)
+        elif hasattr(self.env, 'stat'):
+            merge_stat(self.env.stat, stat)
+        return stat
+
+
+    def set_state_id(self, id):
+        if hasattr(self.env, 'set_state_id'):
+            return self.env.set_state_id(id)
+        else:
+            return None
+
+    def get_state_color(self):
+        if hasattr(self.env, 'get_state_color'):
+            return self.env.get_state_color()
+        else:
+            return None
+
+    def reset_stat(self):
+        if hasattr(self.env, 'reset_stat'):
+            self.env.reset_stat()
+
+    def call_recursive(self, func_name, args, defaul_val=None):
+        if hasattr(self, func_name):
+            return getattr(self, func_name)
+        elif hasattr(self.env, func_name):
+            return getattr(self.env, func_name)
+        elif hasattr(self.env, 'call_recursive'):
+            return self.env.call_recursive(func_name, args, defaul_val)
+        else:
+            return defaul_val
+
+    def property_recursive(self, property_name, defaul_val=None):
+        if hasattr(self, property_name):
+            return getattr(self, property_name)
+        elif hasattr(self.env, property_name):
+            return getattr(self.env, property_name)
+        elif hasattr(self.env, 'property_recursive'):
+            return self.env.property_recursive(property_name, defaul_val)
+        else:
+            return defaul_val
+
 
     #def observation_dim(self):
     #    return sum(list(self.env.observation_space.shape))    
