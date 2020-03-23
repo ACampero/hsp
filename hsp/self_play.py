@@ -191,6 +191,7 @@ class SelfPlayWrapper(EnvWrapper):
     @property
     def observation_dim(self):
         dim = self.env.observation_dim # current observation
+        print(dim)
         dim += 2 # meta information
         dim += self.env.observation_dim # target observation
         dim += 1 # current mind
