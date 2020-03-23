@@ -40,6 +40,7 @@ class Minigrid2Image(gym.ObservationWrapper):
         return observation["image"]
 
     def get_current_obs(self):
+        print(current_observation, type(current_observation))
         return self.current_observation.view(1,-1)
 
     def get_state(self):
