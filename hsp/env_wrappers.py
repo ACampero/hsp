@@ -1,6 +1,7 @@
 import time
 import numpy as np
 import torch
+import os
 from mazebase.torch_featurizers import GridFeaturizer
 from utils import merge_stat
 
@@ -11,7 +12,8 @@ import gym_minigrid.wrappers as wrappers
 
 
 def MinigridWrapper(env_name):
-    env = Minigrid2Image(gym.make(env_name))
+    #env = Minigrid2Image(gym.make(env_name))
+    env = gym.make(env_name)
     env = wrappers.FullyObsWrapper(env)
     return env
 
