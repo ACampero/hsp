@@ -12,10 +12,14 @@ import gym_minigrid.wrappers as wrappers
 
 
 def MinigridWrapper(env_name):
-    env = Minigrid2Image(gym.make(env_name))
+    env = create_env(env_name)
     #env = gym.make(env_name)
-    env = wrappers.FullyObsWrapper(env)
+    env = wrappers.FullyObsWrapper(env.env)
     return env
+
+def create_env(env_name):
+    return Minigrid2Image(gym.make(env_name))
+
 
 class Minigrid2Image(gym.ObservationWrapper):
     # FIXME: we need to support complex observation spaces
@@ -26,8 +30,8 @@ class Minigrid2Image(gym.ObservationWrapper):
     def observation(self, observation):
         return observation["image"]
 
-    def observation_dim(self):
-        return sum(list(self.env.observation_space.shape))    
+    #def observation_dim(self):
+    #    return sum(list(self.env.observation_space.shape))    
 
 
 
