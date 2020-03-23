@@ -12,8 +12,8 @@ import gym_minigrid.wrappers as wrappers
 
 
 def MinigridWrapper(env_name):
-    #env = Minigrid2Image(gym.make(env_name))
-    env = gym.make(env_name)
+    env = Minigrid2Image(gym.make(env_name))
+    #env = gym.make(env_name)
     env = wrappers.FullyObsWrapper(env)
     return env
 
@@ -22,6 +22,7 @@ class Minigrid2Image(gym.ObservationWrapper):
     def __init__(self, env):
         gym.ObservationWrapper.__init__(self, env)
         self.observation_space = env.observation_space.spaces["image"]
+        print(self.observation_space.shape)
 
     def observation(self, observation):
         return observation["image"]
