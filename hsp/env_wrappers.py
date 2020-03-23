@@ -22,13 +22,12 @@ class Minigrid2Image(gym.ObservationWrapper):
     def __init__(self, env):
         gym.ObservationWrapper.__init__(self, env)
         self.observation_space = env.observation_space.spaces["image"]
-        print(self.observation_space.shape.numel())
 
     def observation(self, observation):
         return observation["image"]
 
     def observation_dim(self):
-        self.env.observation_space    
+        return sum(list(self.env.observation_space.shape))    
 
 
 
