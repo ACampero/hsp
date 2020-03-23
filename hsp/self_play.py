@@ -263,8 +263,6 @@ class SelfPlayWrapper(EnvWrapper):
             mode = -1
             time = self.current_time / self.args.max_steps
         obs = current_obs
-        print('holaaaa1', type(obs))
-        print('holaaaaaaaa',obs.shape)
         obs = torch.cat((obs, torch.Tensor([[mode, time]])), dim=1)
         obs = torch.cat((obs, self.target_obs), dim=1)
         obs = torch.cat((obs, torch.Tensor([[self.current_mind]])), dim=1)
