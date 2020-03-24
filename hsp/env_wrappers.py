@@ -51,7 +51,6 @@ class Minigrid2Image(gym.ObservationWrapper):
         return None
 
     def step(self, action):
-        print('holaaa', action, type(action))
         frame, reward, done, _ = self.env.step(action[0])
         frame = torch.Tensor(frame["image"])
         self.current_observation = frame

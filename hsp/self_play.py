@@ -285,7 +285,6 @@ class SelfPlayWrapper(EnvWrapper):
 
         self.current_time += 1
         self.current_mind_time += 1
-        print(action,type(action))
         obs_internal, reward, done, info = self.env.step(action)
         self.total_steps += 1
         if self.test_mode:
