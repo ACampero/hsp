@@ -276,6 +276,7 @@ class Trainer(object):
         stat['num_episodes'] = 0
         while len(batch) < self.args.batch_size:
             episode, episode_stat = self.get_episode()
+            print('holaa_episode', episode_stat)
             merge_stat(episode_stat, stat)
             stat['num_episodes'] += 1
             batch += episode
@@ -290,6 +291,7 @@ class Trainer(object):
         stat['num_steps'] = len(batch)
         stat['num_epochs'] = 1
         batch = Transition(*zip(*batch))
+        print('holaaa_epoch', stat)
         return batch, stat
 
     # only used when nthreads=1
