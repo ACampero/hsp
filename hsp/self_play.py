@@ -291,6 +291,7 @@ class SelfPlayWrapper(EnvWrapper):
             self.total_test_steps += 1
             self.stat['num_steps_test'] += 1
             self.stat['reward_test'] += reward
+            print('hola_hmm', reward)
             return (self.get_current_obs(), reward, done, info)
         done = False
         reward = 0
@@ -302,6 +303,7 @@ class SelfPlayWrapper(EnvWrapper):
         if self.current_mind == 1:
             self.stat['num_steps_alice'] += 1
             self.stat['reward_alice'] += reward
+            print('hola_hmmm2', reward)
 
             if not done:
                 should_switch = False
