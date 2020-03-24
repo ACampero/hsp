@@ -81,10 +81,13 @@ class Trainer(object):
                     print('t={}\treward={}'.format(t, reward))
                 self.env.display()
 
+            if reward>0:
+                print('holaa_positive', reward, done)
+
             episode.append(Transition(state, np.array([action]), action_out, value, mask, next_state, reward, misc))
             state = next_state
             if done:
-                print(stat['reward'])
+                print('hola_done',stat['reward'])
                 break
         stat['num_steps'] = t + 1
         if hasattr(self.env, 'reward_terminal'):
