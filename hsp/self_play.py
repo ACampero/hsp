@@ -286,12 +286,13 @@ class SelfPlayWrapper(EnvWrapper):
         self.current_time += 1
         self.current_mind_time += 1
         obs_internal, reward, done, info = self.env.step(action)
+        if reward>0:
+            print('holaaaa_positive', reward done, self.current_time)
         self.total_steps += 1
         if self.test_mode:
             self.total_test_steps += 1
             self.stat['num_steps_test'] += 1
             self.stat['reward_test'] += reward
-            print('hola_hmm', reward)
             return (self.get_current_obs(), reward, done, info)
         done = False
         reward = 0
@@ -303,7 +304,6 @@ class SelfPlayWrapper(EnvWrapper):
         if self.current_mind == 1:
             self.stat['num_steps_alice'] += 1
             self.stat['reward_alice'] += reward
-            print('hola_hmmm2', reward)
 
             if not done:
                 should_switch = False
