@@ -55,7 +55,7 @@ class Minigrid2Image(gym.ObservationWrapper):
         frame, reward, done, _ = self.env.step(action[0])
         frame = torch.Tensor(frame["image"])
         self.current_observation = frame
-        return frame, reward, done
+        return frame, reward, done, _
 
     def reset(self):
         frame = self.env.reset()
