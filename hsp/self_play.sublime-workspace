@@ -1,0 +1,428 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cae",
+				"case"
+			],
+			[
+				"o",
+				"o"
+			],
+			[
+				"correspondances",
+				"correspondances"
+			],
+			[
+				"vocab",
+				"vocabSize"
+			],
+			[
+				"cl",
+				"classifier_result"
+			],
+			[
+				"opp_raise",
+				"opp_raise"
+			],
+			[
+				"opp",
+				"opp_discard_turn"
+			],
+			[
+				"C",
+				"C"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"aurocHVMIni",
+				"aurocHVMIniV4"
+			],
+			[
+				"aurocHVMI",
+				"aurocHVMIniVGG"
+			],
+			[
+				"aurocHVMV",
+				"aurocHVMVGG"
+			],
+			[
+				"meanaurocHVMIni",
+				"meanaurocHVMIniV4"
+			],
+			[
+				"meanaurocHVMI",
+				"meanaurocHVMIniIT"
+			],
+			[
+				"meanaurocHVMV",
+				"meanaurocHVMVGG"
+			],
+			[
+				"aurocC",
+				"aurocCifarIniVGG"
+			],
+			[
+				"aurocM",
+				"aurocMSRIniVGG"
+			],
+			[
+				"aurocMSR",
+				"aurocMSRIni"
+			],
+			[
+				"meanaurocHVM",
+				"meanaurocHVMIT"
+			],
+			[
+				"meanaurocH",
+				"meanaurocHVMIniVGG"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"alphak",
+				"alphak"
+			],
+			[
+				"list",
+				"list"
+			],
+			[
+				"imageIni",
+				"imageIni"
+			],
+			[
+				"Mk",
+				"Mk"
+			],
+			[
+				"k",
+				"k"
+			],
+			[
+				"Mc",
+				"Mc"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"K",
+				"K"
+			],
+			[
+				"taok",
+				"taok"
+			],
+			[
+				"alpha",
+				"alphakaux"
+			],
+			[
+				"Mkaux",
+				"Mkaux"
+			],
+			[
+				"s",
+				"s"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/gym-minigrid/slurm_minigrid_rewardform.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/stateoftheart/hsp/hsp/self_play.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/gym-minigrid/slurm_minigrid_modify.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/Engineering",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/learningworkshopPtoEscondido",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring/SAIL-ON",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/Notes SOTA January",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/Courses Sprin 2020",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/StateOfTheArt.ai (stateoftheart.ai)",
+		"/home/andresubuntu/monobeast_generator2.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/Paper submission wrap up february 6th",
+		"/home/andresubuntu/slurm_minigrid.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/gym-minigrid/slurm_minigrid_extrinsic.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/2020/gym-minigrid/slurm_minigrid_novelty.py",
+		"/home/andresubuntu/Downloads/5606728_0_log.out",
+		"/home/andresubuntu/Downloads/plot_andres.py",
+		"/home/andresubuntu/Downloads/Research Journal Mine",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Internship offer",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/For SimPLe",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/AWS_configs",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/RIIAA palabras",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/Book_Slides",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/Book slides 2",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/ListofGames",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/Openmind Random run",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/The world is happening",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/HPARAMS",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/RC_RL/preprocess.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Leaveofabsenceoptions",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Poker Gastos online:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/RC_RL/VGDLEnvAndres.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/FAIR_Conversation",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/Pedro project",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Program Induction CocosciLab",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/Singularity/local.def",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/notas_dificil_trabajar.",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Premio Nacional Juventud/documentos",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Internships2019/FAIR/Andres Campero Nunez Offer Letter_encrypted_.pdf",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/Josh conversation june 5th",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/VGTranspiler/inference/agent.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Summer2019/VGTranspiler/play.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Book/Epilogue",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Book/libro post:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Book/Book Contests",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Avi Pfeffer",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Book/P Rules (online only):",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Mexico meeting 4",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Conversation with kevin:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Taxes/2018/Instrucciones",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Book/apuntes de guevara:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Deloitte-visa process",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Notes Mexico3",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Internships2019/deepmind interview:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Notes Mexico2",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Ideas/Quotes2019",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Potential Courses",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Mexico Meeting_transcript",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/email to irinamattalex",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/deepmind interview:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/notes_book_classes-3",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/notes_book-2",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/notes_book-1",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/notes_book",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2019/Docker-Tutorial/Containers:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/emails_nips_corrected.txt",
+		"/home/andresubuntu/Downloads/comentarios David",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/BabyAi parsing",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Pedro",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Riedel Project. Subsemantic Analysis",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Idea: private vs public (we can talk about it)",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/Quals comments:",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/CogLunch/quals thoughts",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Ideas/WhyprocastinatingAndthoughts,Marzo2017",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/UCLMR technical notes",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Committee Meeting/josh comments",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/UCL Visit/MachineReading, notes",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/mensaje a olimpicos",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/UCL Visit/Untitled Document",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Lets take it seriously",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall 2018/IBM Meetings/june 21st",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/Felix_Sosa_comments",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/introspection_CoRL/tracker1rnn.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW1/HW1_good.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Roger_Conversation_June7th",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW2/HW2_LSTM.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/cs287-s18/section/section2.ipynb",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/introspection_CoRL/cfg/yolov3.cfg",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/darknet_rnn.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/utils_rnn.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/tracker1rnn.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/detect.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/tracker1.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/cfg/yolo.cfg",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/cfg.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/utils.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/pytorch-yolo2/darknet.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/Abduction papers",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/diff-Theory-ILP/Even_predicate.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/Even_predicate.py",
+		"/home/andresubuntu/Downloads/Even_predicate.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/diff-Theory-ILP/learn_constant_embeddings_full_flexible.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/diff-Theory-ILP/Sparsev1-Learn-family.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/diff-Theory-ILP/Sparsev1-Learn-Big_animals.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/Even_predicate.ipynb",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/commands accuracy",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW2/HW2.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Intro to Neural Computation/Fourier Series, april 3rd",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Ideas",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/michael commands",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/An optimistic version of my life",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/carta a Mon",
+		"/home/andresubuntu/.ssh/id_rsa.pub",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW2/HW2_combined.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW2/HW2_combinedtwo.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW2/HW2_Neural.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW2/HW2_trigram.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/AndreiProject/Introspection/pseudocode.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/AndreiProject/BarbuJAIR.pdf",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/Classes/Developmental Proseminar/Final Paper",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/HW1/HW1.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/CS287/Readings",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Spring 2018/Riedel Project/Joshs Thoughts, Jan 16th",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/AndreiProject/Andrei Barbu's project",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/AndreiProject/meeting,12dec",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/AndreiProject/pseudocode.py",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/Project Idea",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/At cambridge.",
+		"/home/andresubuntu/Dropbox (MIT)/MIT/Fall2017/A quantum story"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "self_play.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox (MIT)/MIT/Fall2016/Project JoshJim/HBayesian/CRP/oneshotMSRFullOracleparallel.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
