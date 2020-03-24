@@ -57,7 +57,7 @@ class Trainer(object):
             if self.args.sp:
                 misc['mind'] = self.env.current_mind
             next_state, reward, done, info = self.env.step(actual)
-            print('holaaaa', reward)
+            #print('holaaaa', reward)
             stat['reward'] = stat.get('reward', 0) + reward
             misc.update(info)
             done = done or t == self.args.max_steps - 1
