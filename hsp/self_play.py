@@ -336,6 +336,9 @@ class SelfPlayWrapper(EnvWrapper):
             self.stat['reward_bob'] += reward
 
         obs = self.get_current_obs()
+
+        if reward>0:
+            print('holaaaa_positive', reward, done, self.current_time)
         return (obs, reward, done, info)
 
     def get_pos(self):
