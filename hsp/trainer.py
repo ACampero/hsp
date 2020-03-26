@@ -64,8 +64,6 @@ class Trainer(object):
             misc['episode_break'] = 0 if done else 1
 
 
-
-            print('holaaaa', reward, done)
             if self.args.sp and info.get('sp_switched'):
                 switch_t = t
                 mask = 0 # disconnect episode here
@@ -84,7 +82,7 @@ class Trainer(object):
                 self.env.display()
 
             if reward>0:
-                print('holaa_positive', reward, done)
+                print('holaa_positive', reward, stat['reward'], done)
 
             episode.append(Transition(state, np.array([action]), action_out, value, mask, next_state, reward, misc))
             state = next_state
