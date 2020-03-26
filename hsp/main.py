@@ -288,8 +288,8 @@ def run(num_epochs):
                 if k in stat and v.divide_by is not None and stat[v.divide_by] > 0:
                     stat[k] /= stat_bak[v.divide_by]
                 v.data.append(stat.get(k, 0))
-        print('Epoch {}\tReward {:.2f}\tTime {:.2f}s'.format(
-            epoch, stat['reward'], epoch_time
+        print('Epoch {}\tReward {:.2f}\tTime {:.2f}s\tReward_per_episode {}\tTotal_Steps {}\tTotal_test_Steps {} '.format(
+            epoch, stat['reward'], epoch_time, log['reward_test'], log['num_steps_total'], log['total_test_steps']
         ))
         if args.plot:
             for k, v in log.items():
