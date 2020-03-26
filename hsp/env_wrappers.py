@@ -29,7 +29,7 @@ class Minigrid2Image(gym.ObservationWrapper):
         self.observation_space = env.observation_space.spaces["image"]
 
         ##ANDRES
-        self.observation_dim = self.env.width + self.env.height + 3
+        self.observation_dim = self.env.width*self.env.height*3
         self.num_actions = self.action_space.n
         self.dim_actions = 1
 
