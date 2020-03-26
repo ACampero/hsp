@@ -61,22 +61,31 @@ class Trainer(object):
 
 
             if reward>0:
-                print('holaa_positive_beforeeee', reward, stat['reward'], done)
+                print('holaa_positive1', reward, stat['reward'], done)
             misc.update(info)
             done = done or t == self.args.max_steps - 1
             mask = 0 if done else 1
             misc['episode_break'] = 0 if done else 1
 
-
+            if reward>0:
+                print('holaa_positive2', reward, stat['reward'], done)
             if self.args.sp and info.get('sp_switched'):
                 switch_t = t
                 mask = 0 # disconnect episode here
+
+            if reward>0:
+                print('holaa_positive3', reward, stat['reward'], done)    
             if self.args.sp and (not self.args.sp_asym) and t == switch_t + 1 > 0:
                 stat['target_emb_snapshot'] = {'merge_op': 'concat' ,
                     'data': self.policy_net.bob.target_enc.target_emb_snapshot.clone()}
-
+            
+            if reward>0:
+                print('holaa_positive4', reward, stat['reward'], done)
             if self.args.sp and self.args.sp_persist > 0:
                 misc['sp_persist_count'] = self.env.persist_count
+
+            if reward>0:
+                print('holaa_positive5', reward, stat['reward'], done)
 
             if self.display:
                 if self.args.sp:
@@ -86,7 +95,7 @@ class Trainer(object):
                 self.env.display()
 
             if reward>0:
-                print('holaa_positive', reward, stat['reward'], done)
+                print('holaa_positive10', reward, stat['reward'], done)
 
             episode.append(Transition(state, np.array([action]), action_out, value, mask, next_state, reward, misc))
             state = next_state
