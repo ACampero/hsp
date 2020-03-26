@@ -292,8 +292,8 @@ class SelfPlayWrapper(EnvWrapper):
             self.total_test_steps += 1
             self.stat['num_steps_test'] += 1
             self.stat['reward_test'] += reward
-            if reward>0:
-                print('holaaa_positive', reward, 'total_reward:',self.stat['reward_test'], 'steps:', self.total_steps)
+            #if reward>0:
+            #    print('holaaa_positive', reward, 'total_reward:',self.stat['reward_test'], 'steps:', self.total_steps)
             return (self.get_current_obs(), reward, done, info)
         done = False
         reward = 0
