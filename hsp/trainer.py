@@ -57,13 +57,15 @@ class Trainer(object):
             if self.args.sp:
                 misc['mind'] = self.env.current_mind
             next_state, reward, done, info = self.env.step(actual)
-            print('holaaaa', reward, done)
             stat['reward'] = stat.get('reward', 0) + reward
             misc.update(info)
             done = done or t == self.args.max_steps - 1
             mask = 0 if done else 1
             misc['episode_break'] = 0 if done else 1
 
+
+
+            print('holaaaa', reward, done)
             if self.args.sp and info.get('sp_switched'):
                 switch_t = t
                 mask = 0 # disconnect episode here
