@@ -107,7 +107,7 @@ class Trainer(object):
             merge_stat(self.env.get_stat(), stat)
 
         if True:#self.display:
-            print('total_steps', env.total_steps)
+            print('total_steps', self.env.total_steps)
             print('total reward={}'.format(stat['reward']))
             if self.args.sp and not self.env.test_mode:
                 print('alice reward={}\tbob reward={}'.format(stat['reward_alice'], stat['reward_bob']))
