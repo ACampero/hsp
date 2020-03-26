@@ -160,7 +160,7 @@ class Trainer(object):
             action_out = [torch.cat(a, dim=0) for a in action_out]
         else:
             # forward again in batch for speed-up
-            print('hola_batch', len(batch.state), batch.state[0].shape , batch.state[8].shape)
+            #print('hola_batch', len(batch.state), batch.state[0].shape , batch.state[8].shape)
             states = Variable(torch.cat(batch.state, dim=0), requires_grad=False)
             if self.args.sp:
                 action_out, values, goal_vectors, enc_vectors = self.policy_net(states)
