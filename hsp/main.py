@@ -291,7 +291,6 @@ def run(num_epochs):
         print('Epoch {}\tReward {:.2f}\tTime {:.2f}s'.format(
             epoch, stat['reward'], epoch_time
         ))
-        print('holaa', log[total_test_steps])
         if args.plot:
             for k, v in log.items():
                 if v.plot and len(v.data) > 0:
