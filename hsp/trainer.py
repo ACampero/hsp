@@ -58,6 +58,10 @@ class Trainer(object):
                 misc['mind'] = self.env.current_mind
             next_state, reward, done, info = self.env.step(actual)
             stat['reward'] = stat.get('reward', 0) + reward
+
+
+            if reward>0:
+                print('holaa_positive_beforeeee', reward, stat['reward'], done)
             misc.update(info)
             done = done or t == self.args.max_steps - 1
             mask = 0 if done else 1
@@ -87,7 +91,7 @@ class Trainer(object):
             episode.append(Transition(state, np.array([action]), action_out, value, mask, next_state, reward, misc))
             state = next_state
             if done:
-                print('hola_done',stat['reward'])
+                print('hola_done',stat['reward'], done)
                 break
         stat['num_steps'] = t + 1
         if hasattr(self.env, 'reward_terminal'):
