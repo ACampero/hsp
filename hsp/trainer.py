@@ -105,7 +105,7 @@ class Trainer(object):
         if hasattr(self.env, 'get_stat'):
             merge_stat(self.env.get_stat(), stat)
 
-        if True:#self.display:
+        if self.display:
             print('total_steps', self.env.total_steps)
             print('total reward={}'.format(stat['reward']))
             if self.args.sp and not self.env.test_mode:
