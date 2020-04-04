@@ -289,7 +289,7 @@ def run(num_epochs):
                     stat[k] /= stat_bak[v.divide_by]
                 v.data.append(stat.get(k, 0))
         print('Epoch {}\tReward {:.2f}\tTime {:.2f}s\tReward_per_episode {}\tTotal_Steps {}\tTotal_test_Steps {} '.format(
-            epoch, stat['reward'], epoch_time, log['reward_test'], log['num_steps_total'], log['total_test_steps']
+            epoch, stat['reward'], epoch_time, log['reward_test'][0][-1], log['num_steps_total'][0][-1], log['total_test_steps'][0][-1]
         ))
         if args.plot:
             for k, v in log.items():
